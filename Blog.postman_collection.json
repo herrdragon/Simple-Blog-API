@@ -81,6 +81,21 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var body = {\r",
+							"    \"user\": \"pp\",\r",
+							"    \"pass\": \"mm\"\r",
+							"}\r",
+							"var body_str = JSON.stringify(body);\r",
+							"pm.environment.set('request_body', body_str);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"request": {
@@ -88,7 +103,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"user\": \"pp\",\r\n    \"pass\": \"mm\"\r\n}",
+					"raw": "{{request_body}}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -121,6 +136,21 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var body = {\r",
+							"    \"title\":\"mefirst\",\r",
+							"    \"author\":\"me\",\r",
+							"    \"content\":\"test post000002\"\r",
+							"}\r",
+							"var body_str = JSON.stringify(body);\r",
+							"pm.environment.set('request_body', body_str);"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"request": {
@@ -128,7 +158,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\":\"mefirst\",\r\n    \"author\":\"me\",\r\n    \"content\":\"test post000002\"\r\n}",
+					"raw": "{{request_body}}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -161,6 +191,20 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var body = {\r",
+							"    \"author\":\"me\",\r",
+							"    \"comments\": \"dos\"\r",
+							"}\r",
+							"var body_str = JSON.stringify(body);\r",
+							"pm.environment.set('request_body', body_str);"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"request": {
@@ -168,7 +212,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"author\":\"me\",\r\n    \"comments\": \"dos\"\r\n}",
+					"raw": "{{request_body}}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -203,6 +247,21 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var body = {\r",
+							"    \"author\":\"mmm\",\r",
+							"    \"comment\": \"dos\",\r",
+							"    \"reply\": \"hello\"\r",
+							" }\r",
+							"var body_str = JSON.stringify(body);\r",
+							"pm.environment.set('request_body', body_str);"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"request": {
@@ -210,7 +269,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"author\":\"mmm\",\r\n    \"comment\": \"dos\",\r\n    \"reply\": \"hello\"\r\n }\r\n",
+					"raw": "{{request_body}}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -246,6 +305,24 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var body = {\r",
+							"    \"id\": 0,\r",
+							"    \"title\": \"mefirst\",\r",
+							"    \"author\": \"me\",\r",
+							"    \"content\": \"bye\",\r",
+							"    \"timestamp\": \"2022-02-13T03:13:04.836Z\",\r",
+							"    \"comments\": []\r",
+							"}\r",
+							"var body_str = JSON.stringify(body);\r",
+							"pm.environment.set('request_body', body_str);"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"request": {
@@ -253,7 +330,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 0,\r\n    \"title\": \"mefirst\",\r\n    \"author\": \"me\",\r\n    \"content\": \"bye\",\r\n    \"timestamp\": \"2022-02-13T03:13:04.836Z\",\r\n    \"comments\": []\r\n}",
+					"raw": "{{request_body}}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -286,6 +363,19 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var body = {\r",
+							"    \"content\":\"oh yeah\"\r",
+							"}\r",
+							"var body_str = JSON.stringify(body);\r",
+							"pm.environment.set('request_body', body_str);"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"request": {
@@ -293,7 +383,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"content\":\"oh yeah\"\r\n}",
+					"raw": "{{request_body}}",
 					"options": {
 						"raw": {
 							"language": "json"
