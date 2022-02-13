@@ -1,0 +1,13 @@
+{
+  "name": "new-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Miguel Herrnsdorf",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-json-validator-middleware": "^2.2.1"
+  }
+}
