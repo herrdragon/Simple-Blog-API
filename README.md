@@ -78,5 +78,5 @@ Delete:/post/:id/comment/:id
 Sample:delete one comment
 ```
 
-You can also import Blog.postman_collection.json into POSTMAN as a collection. It contains already some data so you can use the runner to test all endpoints. They all should give 200 ok. THe runner sequence should be: Login, Post, CommentPost, ReplyComment, EditPost, EditComment, GetPosts, GetOnePost, DeleteComment, DeletePost.
+You can also import Blog.postman_collection.json into POSTMAN as a collection. It contains already some data so you can use the runner to test all endpoints. They all should give 200 ok. The runner sequence should be: Login, Post, CommentPost, ReplyComment, EditPost, EditComment, GetPosts, GetOnePost, DeleteComment, DeletePost.
 For better results, test runner first thing after starting the server.
